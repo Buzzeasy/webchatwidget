@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<!--
+  This is a sample HTML file which shows how to embed a full-window instance of WebChat.
+  1. Build the project: "npm run build"
+  2. Start a web server: "npm run start"
+  3. Aim your browser at "http://localhost:8000/samples?[parameters as listed below]"
+
+  For ease of testing, several parameters can be set in the query string:
+    * s = Direct Line secret, or
+    * t = Direct Line token (obtained by calling Direct Line's Generate Token)
+    * domain = optionally, the URL of an alternate Direct Line endpoint
+    * webSocket = set to 'true' to use WebSocket to receive messages (currently defaults to false)
+    * userid, username = id (and optionally name) of bot user
+    * botid, botname = id (and optionally name) of bot
+-->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Bot Chat 1</title>
+
+    
+    <!--<link href="../../botchat-fullwindow.css" rel="stylesheet" />-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        padding: 2px;
+      }
+      p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+      }
+      .btn{
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body style="background-color:black; color:white;">
+    <p > Your Website Here    </p>
+    <!-- Buttons to demonstrate hookable open/close functions. These are callable from any javascript script attached to the window-->
+      <button id="openChatTrigger" onClick="window.BotChat.toggleWindowOpen()" class="btn">Open Chat</button>
+    <button id="closeChatTrigger" onClick="window.BotChat.toggleWindowClose()" class="btn">Close Chat</button>
+    
+	  <!-- Buzzeasy Chat Widget-->
+	   <div id="BuzzeasyChat"></div>
+      <script src="../buzzchat.js"></script>
+      
+      <script>BotChat.App({secret:'_TtRqBqfDfU.dsQcdWVWrSq1luRs8vpOGWKn-kvl_GG-vIcZd-QcsoY',resourceLocation: "dev", tenantUrl: "https://devag.buzzeasy.com/BuzzeasyChatDev/BotFrameworkConnector/api/webchat", heartbeatInterval:60000, themeConfig: {"color":{"messageFromMe":"","chatButtonGlow":"#43ec12"},"settings":{"fontFamily":"\"Verdana\", sans-serif","fontSize":"14px","showUploadButton":"True"},"avatar":""}}, document.getElementById('BuzzeasyChat'));</script>
+	  
+	  <div>          
+      </div>
+  </body>
+</html>

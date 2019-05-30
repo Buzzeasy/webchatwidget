@@ -1,0 +1,36 @@
+$actionsHeight: var(--actionsHeight, 40px);
+$consoleHeight: var(--consoleHeight, 50px);
+$consoleBorderWidth: var(--consoleBorderWidth, 0px);
+
+$fontFamily: var(--fontFamily, ('Segoe UI', sans-serif));
+$fontSize: var(--fontSize, 15px);
+
+$headerPaddingBottom:  0;
+$headerTotalHeight: 72px;
+$headerPaddingLeft:  $headerTotalHeight/4;
+$headerPaddingRight: $headerTotalHeight/4;
+$headerPaddingTop: $headerTotalHeight/4;
+
+$borderRadius: var(--borderRadius,4px);
+
+$actionTransition: var(--actionTransition, .8s cubic-bezier(--f,0,0,.8,1));
+
+$card_narrow: var(--card_narrow, 216px);
+$card_normal: var(--card_normal, 320px);
+$card_wide: var(--card_wide, 416px);
+
+$card_borderWidth: var(--card_borderWidth, 1px);
+$card_padding: var(--card_padding, 8px);
+
+$card_fontSize: var(--card_fontSize, 13px);
+
+$separation: var(--separation, 8px);
+$chatButtonSize: var(--chatButtonSize, 75px);
+
+$avatarWidth:50px;
+
+$avatar_a: var(--avatar_a, "https://web.buzzeasy.com/demo/img/buzzbot.png");
+$avatar_url_a: var(--avatar_url_a, url("https://web.buzzeasy.com/demo/img/buzzbot.png"));
+
+$avatar_b: var(--avatar_b, "https://web.buzzeasy.com/demo/img/buzzbot.png");
+$avatar_url_b: var(--avatar_url_b, url("https://web.buzzeasy.com/demo/img/buzzbot.png"));

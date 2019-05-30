@@ -1,0 +1,13 @@
+
+@mixin card-size($cardWidth,$card_borderWidth) {
+
+    .wc-card {
+        border: $card_borderWidth solid #d2dde5;
+        width: calc(#{$cardWidth} - #{$avatarWidth} - 2 * (#{$card_padding} + #{$card_borderWidth}));
+    }
+
+    .wc-adaptive-card {
+        width: calc(#{$cardWidth} - #{$avatarWidth} - 2 * (#{$card_padding} + #{$card_borderWidth}));
+    }
+    
+}
