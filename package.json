@@ -69,10 +69,10 @@
     "npm-run-all": "3.1.2",
     "rimraf": "2.6.1",
     "semver": "^5.5.0",
-    "source-map-loader": "0.2.1",
+    "source-map-loader": "0.2.4",
     "style-loader": "^0.23.1",
     "typescript": "2.3",
-    "webpack": "2.3.3"
+    "webpack": "5.75.0"
   },
   "files": [
     "built/",
